@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -14,13 +16,19 @@
     <header>
       <div class="container">
         <div id="branding">
+            
           <h1><span class="highlight">CIDL</span> Webpage</h1>
         </div>
         <nav>
           <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li class="current"><a href="home.php">Home</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="pictures.html">Pictures</a></li>
+            <li><a href="pictures.html">Photos</a></li>
+			<li><a href="links.html">Links</a></li>
+			<li><a href="booklets.html">Booklets</a></li>
+			<li><a href="locations.html">Location</a></li>
+			<li><a href="questions.html">Questions</a></li>
+            <li class="current"> <a class="float-right" href="logout.php">Logout</a></li>
           </ul>
         </nav>
       </div>
@@ -57,12 +65,11 @@
         </div>
         <div class="box">
           <img src="./img/pictures.png">
-          <h3>Pictures</h3>
-          <p>Test.</p>
+          <h3>Join us on Discord!</h3>
+          <a href="https://discord.gg/b2NHBA"> Invite Link </a>
         </div>
       </div>
     </section>
-
     <footer>
       <p>CIDL Webpage, made by Jason.</p>
     </footer>
