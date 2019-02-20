@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set('America/New_York');
 ?>
 <html>
   <head>
@@ -28,7 +29,7 @@ session_start();
 			<li><a href="booklets.html">Booklets</a></li>
 			<li><a href="locations.html">Location</a></li>
 			<li><a href="questions.html">Questions</a></li>
-            <li class="current"> <a class="float-right" href="logout.php">Logout</a></li>
+            <li> <a class="float-right" href="logout.php">Logout</a></li>
           </ul>
         </nav>
       </div>
@@ -36,8 +37,9 @@ session_start();
 
     <section id="showcase">
       <div class="container">
-        <h1>CIDL Home Page</h1>
-        <p> This is the home page of the CIDL Community.</p>
+        <h1>Welcome, <span class="highlight"><?php echo $_SESSION['username'] ?></span></h1>
+        <p>The Date is: <?php echo date("m/d/Y"); ?></p>
+          <p>The Current Time (EST) is <?php echo date('h:i A');?></p>
       </div>
     </section>
 

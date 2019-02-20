@@ -2,7 +2,6 @@
 
 
 session_start();
-header('location:login.php');
 
 $con = mysqli_connect('localhost','root','2234567dAda');
 mysqli_select_db($con,'userregistration');
@@ -19,3 +18,11 @@ if($num==1){
 	echo"Registration Successful!";
 }
 ?>
+<html>
+    <head>
+    </head>
+    <body>
+	    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+        <a class="float-right" href="logout.php">Return to the Login Page.</a>
+    </body>
+</html>
